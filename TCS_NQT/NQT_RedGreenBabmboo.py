@@ -75,7 +75,11 @@ def stringTransfer(s, k):
 
         # Flip the characters within the window
         while start_window < length and start_window < end_window:
-            string_list[start_window] = 'R' if string_list[start_window] == 'G' else 'G'
+            if string_list[start_window] == 'G':
+                string_list[start_window] = 'R'
+            else:
+                string_list[start_window] = 'G'
+
             start_window += 1
 
     return minutes

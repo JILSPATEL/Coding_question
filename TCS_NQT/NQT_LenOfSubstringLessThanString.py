@@ -20,7 +20,7 @@ def noOfSubstring(strLen, str1):
     len1 = len(str1)
     for i in range(len1):
         sum += int(str1[i])
-        if (sum < strLen):
+        if (sum <= strLen):
             count += 1
     return count
 

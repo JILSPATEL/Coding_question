@@ -48,7 +48,7 @@ def getFare(source, destination):
     # initial fare value
     fare = 0.0
 
-    if not (source in route[0] and destination in route[0]):
+    if source not in route[0] or destination not in route[0]:
         print("Invalid Input")
         exit()
 
@@ -60,12 +60,11 @@ def getFare(source, destination):
             fare += route[1][i]
 
     elif destination_index < source_index:
-        for i in range(source_index + 1), len(route[0]):
+       # If destination is before source
+        for i in range(source_index + 1, len(route[0])):
             fare += route[1][i]
-
-        for i in range(0, route[0].index(destination) + 1):
+        for i in range(dest_index + 1):
             fare += route[1][i]
-
     return float(math.ceil(fare * 0.005))
 
 

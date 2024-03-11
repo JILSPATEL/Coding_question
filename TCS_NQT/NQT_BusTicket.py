@@ -52,12 +52,15 @@ def getFare(source, destination):
         print("Invalid Input")
         exit()
 
-    if route[0].index(source) < route[0].index(destination):
-        for i in range(route[0].index(source), route[0].index(destination) + 1):
+    source_index=route[0].index(source)
+    destination_index=route[0].index(destination)
+
+    if source_index < destination_index:
+        for i in range(source_index, destination_index + 1):
             fare += route[1][i]
 
-    elif route[0].index(destination) < route[0].index(source):
-        for i in range(route[0].index(source) + 1), len(route[0]):
+    elif destination_index < source_index:
+        for i in range(source_index + 1), len(route[0]):
             fare += route[1][i]
 
         for i in range(0, route[0].index(destination) + 1):

@@ -7,7 +7,7 @@ Examples:
 Example 1:
 Input: array[] = {1,2,3,4,5} k=3                                                       0.                       
 Output: 2                                                                                                              
-             Explanation: The answer is 2 because 3 is present at 2nd index.
+Explanation: The answer is 2 because 3 is present at 2nd index.
 
 Example 2:
 Input: array[]={6,7,10,5,3,10} k=10

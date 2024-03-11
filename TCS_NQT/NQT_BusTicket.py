@@ -63,7 +63,7 @@ def getFare(source, destination):
        # If destination is before source
         for i in range(source_index + 1, len(route[0])):
             fare += route[1][i]
-        for i in range(dest_index + 1):
+        for i in range(destination_index + 1):
             fare += route[1][i]
     return float(math.ceil(fare * 0.005))
 

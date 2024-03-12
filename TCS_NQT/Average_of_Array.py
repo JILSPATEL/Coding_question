@@ -1,4 +1,4 @@
-'''
+"""
 
 Problem Statement: Given an array, we have to find the average of all the elements in the array.
 
@@ -18,7 +18,7 @@ Explanation:
 Average is the sum of all the elements divided by number of elements.
 Therefore (1+2+1+1+5+1)/6 = 1.8
 
-'''
+"""
 
 
 def calculate_average_of_array(array, size):
